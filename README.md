@@ -27,8 +27,8 @@ This project sets up the following AWS resources:
 3. **Public SSH Key** - A public SSH key to access the EC2 instance. Make sure the corresponding private key is stored locally.
 
 ## Steps to Execute
-step 1: **SSH pair** - first, create your SSH key pair on the local machine. you can save it in the default location or a specific location. In this project, I have stored it in the default location. If you are saving it in a specific location, please make changes in 'main.tf' and add the right path to your file.
-step 2: **folder** - make sure your 'app.py' and 'main.tf' are in the same folder.
-step 3: run **terraform init** to initiate your backend. Then run **terraform plan** to verify the changes to your infrastructure.
-step 4: Then run **terraform apply** to apply changes to your infrastructure. once your flask operation starts you can browse http://public_ip_of_your_instance . to stop the application press **ctrl+c**
-step 5: once testing is done please run **terraform destroy** to destroy the testing environment that you created above.
+1. **SSH pair** - first, create your SSH key pair on the local machine. you can save it in the default location or a specific location. In this project, I have stored it in the default location. If you are saving it in a specific location, please make changes in 'main.tf' and add the right path to your file.
+2. **folder** - make sure your 'app.py' and 'main.tf' are in the same folder.
+3. run **terraform init** to initiate your backend. Then run **terraform plan** to verify the changes to your infrastructure.
+4. Then run **terraform apply** to apply changes to your infrastructure. once your flask operation starts you can browse http://public_ip_of_your_instance . to stop the application press **ctrl+c**
+5. once testing is done please run **terraform destroy** to destroy the testing environment that you created above.
